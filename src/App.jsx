@@ -8,17 +8,17 @@ function App() {
   const [todos, setTodos] = useState([
     {
       id: 1,
-      title: 'ini adalah todo list pertama',
+      title: 'Finish Progate React Course',
       completed: false,
     },
     {
       id: 2,
-      title: 'ini adalah todo list kedua',
+      title: 'Have lunch with Guru Domba',
       completed: false,
     },
     {
       id: 3,
-      title: 'ini adalah todo list ketiga',
+      title: 'Study React with Ninja Ken',
       completed: false,
     },
   ])
