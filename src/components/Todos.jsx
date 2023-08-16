@@ -3,7 +3,7 @@ import TodoItem from './TodoItem'
 
 const Todos = ({ todos }) => {
   return (
-    <div>
+    <div style={styles.container}>
       {/* data pindahan dari App.jsx */}
       {todos.map((todo) => {
         //data pindahkan ke TodoItem.jsx
@@ -15,4 +15,11 @@ const Todos = ({ todos }) => {
   )
 }
 
+const styles = {
+    container: {
+      width: '40%',
+      margin: '0 auto',
+    },
+  }
+  
 export default Todos
