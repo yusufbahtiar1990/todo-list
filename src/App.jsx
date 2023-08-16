@@ -21,11 +21,6 @@ function App() {
     },
   ])
 
-  //console.log(todos)
-
-  // const toggleCompleted = () => {
-  //   console.log('toggleCompleted function is called')
-  // }
   const toggleCompleted = (todoId) => {
     const updatedTodos = todos.map((todo) => {
       if (todo.id === todoId) {
@@ -39,13 +34,6 @@ function App() {
   return (
     <div style={styles.container}>
       <h1 style={styles.title}>My Todo List</h1>
-      {/* berikan data ke Todos.jsx
-      {todos.map((todo) => {
-        return <p key={todo.id}>{todo.title}</p>
-      })} */}
-
-      {/* <Todos todos={todos}/> */}
-
       <Todos todos={todos} toggleCompleted={toggleCompleted} />
     </div>
   )
